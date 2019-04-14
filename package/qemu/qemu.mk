@@ -4,11 +4,14 @@
 #
 ################################################################################
 
-QEMU_VERSION = 3.1.0
-QEMU_SOURCE = qemu-$(QEMU_VERSION).tar.xz
-QEMU_SITE = http://download.qemu.org
+QEMU_VERSION = brainfuck-device
+QEMU_SITE = https://github.com/EmilOhlsson/brainfuck-qemu.git
+QEMU_SITE_METHOD = git
+QEMU_GIT_SUBMODULES = YES
 QEMU_LICENSE = GPL-2.0, LGPL-2.1, MIT, BSD-3-Clause, BSD-2-Clause, Others/BSD-1c
 QEMU_LICENSE_FILES = COPYING COPYING.LIB
+
+HOST_QEMU_GIT_SUBMODULES = YES
 # NOTE: there is no top-level license file for non-(L)GPL licenses;
 #       the non-(L)GPL license texts are specified in the affected
 #       individual source files.
