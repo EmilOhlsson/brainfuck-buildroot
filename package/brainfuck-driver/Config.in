@@ -1,0 +1,4 @@
+config BR2_PACKAGE_BRAINFUCK_DRIVER
+	bool "brainfuck driver"
+	help
+	  The brainfuck device driver
